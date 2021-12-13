@@ -1,4 +1,4 @@
-// This function will update the previewer with the <textarea> content //
+// This function updates the previewer with <textarea> content //
 const updatePreview = () => {
 
     let editorContent = $("#editor").val();
@@ -7,7 +7,7 @@ const updatePreview = () => {
 };
 
 
-// This function will produce a downloadable markdown file //
+// This function creates a downloadable .md file //
 const saveTextAsFile = () => {
 
     let content = $("#editor").val().replace(/\n/g, "\r\n");
@@ -32,7 +32,7 @@ const defaultContent =`\
 A **freeCodeCamp** project from the _Front End Development Libraries Certification_ created with Bootstrap and jQuery
 ___
 
-Enter GitHub flavored markdown into the editor and see it rendered in real time into HTML in the preview. Check out some useful information below.
+Enter GitHub Flavored Markdown into the editor and see it rendered in real time into HTML in the preview. Check out some useful information below.
 ___
 
 In addition to **headers** and **emphasized text**, you can also write lists:
@@ -79,8 +79,8 @@ Finally, this is how you can display an image:
 ![img](https://bit.ly/3nuqlXU)
 ___
 
-There's a lot more you can do with GitHub flavored markdown.
-Make sure you check out [this](https://bit.ly/2ZtVB0Y) guide.`;
+There's a lot more you can do with GitHub Flavored Markdown.
+Make sure you check out [this](https://bit.ly/2ZtVB0Y) quick guide and also [this](https://www.markdownguide.org/getting-started/) detailed Markdown explanation.`;
 
 
 // When document is ready //

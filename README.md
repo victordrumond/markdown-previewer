@@ -9,7 +9,6 @@ https://victordrumond.github.io/markdown-previewer/
 * Enter GitHub Flavored Markdown and see it rendered in real time in the preview.
 * A [project](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-markdown-previewer) from freeCodeCamp's Front End Development Libraries Certification.
 * Extra feature: download button generates .md file from the content typed into the editor.
-* Icons from [Font Awesome](https://fontawesome.com).
 * Markdown parser and compiler: [Marked.js](https://marked.js.org).
 
 ## Credits
