@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+    <!--Favicon-->
+    <link href="" rel="icon">
+    <!--Font Awesome-->
+    <link href="assets/vendor/font-awesome/css/all.css" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--CSS file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container-fluid">
+
+        <div id="main-container">
+            <div class="row justify-content-around">
+                <!--Editor Title-->
+                <div id="editor-title" class="col-lg-5 col-11">
+                    <h2 class="text-center">Editor</h2>
+                </div>
+                <!--Previewer Title-->
+                <div id="preview-title" class="col-lg-6 col-11">
+                    <h2 class="text-center">Preview</h2>
+                </div>
+                <!--Editor-->
+                <div id="editor-container" class="col-lg-5 col-11">
+                    <form class="text-center">
+                        <textarea id="editor" class="form-control" rows="8"></textarea>
+                        <button id="button" class="btn" type="button" onclick="">Save file</button>
+                    </form>
+                </div>
+                <!--Previewer-->
+                <div id="preview-container" class="col-lg-6 col-11">
+                    <div id="preview"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-container" class="row">
+            <!--Footer-->
+            <footer id="footer" class="col-12 d-flex justify-content-center text-center">
+                <p>A freeCodeCamp project by Victor</p>
+            </footer>
+        </div>
+        
+    </main>
+    
+    <!--Bootstrap-->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--jQuery-->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <!--Marked-->
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <script>
+        marked.setOptions({
+            breaks: true
+        });
+    </script>
+    <!--JavaScript file-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

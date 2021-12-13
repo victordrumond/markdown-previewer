@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Zen+Antique&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+body {
+    background-color: #373F51;
+    height: 100vh;
+}
+
+#main-container {
+    width: 90%;
+    margin: auto;
+}
+
+#editor-title, #preview-title {
+    color: #F4FFFD;
+    margin: 2rem 0 1rem;
+    height: 3rem;
+}
+
+#editor-container, #preview-container {
+    background-color: #F4FFFD;
+    margin: 0.5rem 0 3.5rem;
+    height: calc(100vh - 13rem);
+    border-radius: 8px;
+}
+
+#editor {
+    margin: 2rem 1rem 0;
+    height: calc(100vh - 20rem);
+    width: calc(100% - 2rem);
+    resize: none;
+}
+
+#button {
+    margin: 1rem 0 1.5rem;
+    height: 2.5rem;
+    color: #F4FFFD;
+    background-color: #373F51;
+}
+
+#button:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#preview {
+    margin: 2rem 1rem;
+    height: calc(100% - 4rem);
+    overflow-y: auto;
+}
+
+#footer {
+    background-color: #F4FFFD;
+    left: 0;
+    bottom: 0;
+    height: 3rem;
+}
+
+#footer p {
+    margin: auto;
+}
+
+/* Markdown Elements */
+blockquote {
+    border-left: 3px solid black;
+    padding-left: 5px;
+    margin-left: 25px;
+}
+
+code {
+    color: #D63384;
+    background-color: #E9EBED;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+pre code {
+    padding: 0px;
+}
+
+pre {
+    color: #D63384;
+    background-color: #E9EBED;
+    padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 0 5px;
+}
+
+img {
+    width: 256px;
+    height: auto;
+}
+
+/* Media Query */
+@media screen and (max-width: 991px) {
+    #main-container {
+        width: 95%;
+    }
+
+    #editor-title {
+        margin: 3rem 0 1rem;
+    }
+
+    #editor-container {
+        height: 600px
+    }
+    
+    #editor {
+        height: calc(600px - 7rem);
+    }
+
+    #preview-title {
+        margin: 1rem 0;
+    }
+
+    #preview-container {
+        margin: 0.5rem 0 5rem;
+        height: 600px
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #main-container {
+        width: 98%;
+    }
+
+    #editor-title {
+        margin: 2rem 0 0;
+    }
+
+    #preview-title {
+        margin: 0;
+    }
+
+    #footer {
+        height: 3.5rem;
+    }
+}
